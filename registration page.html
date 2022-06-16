@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Registration page</title>
+  <style type="text/css">
+    @import url('https://fonts.google.com/specimen/Poppins')
+    *{
+    	box-sizing: border-box;
+    	padding: 0;
+    	margin: 0;
+    }
+    @font-face {
+    	font-family: Poppins;
+    	src: url(https://fonts.google.com/specimen/Poppins);
+    }
+
+    html{
+    	font-size: 16px;
+    	font-family: Poppins;
+    }
+    body{
+    	font-family: Poppins;
+    	align-items: center;
+    	justify-content: center;
+    	background: url('IMG_20220615_215133.jpg');
+    }
+   
+    @media screen and (max-width: 1440px){
+    	section{
+    		display: flex;
+    		flex-direction: row;
+    		height: 600px;
+    		padding-right: 60px;
+    		padding-left: 60px;
+    		justify-content: center;
+    		align-items: center;
+    	}
+    	.text {
+    		padding-right: 20px;
+    		width: 50%;
+    		
+    	}
+    	.text h1{
+    		color: white;
+    		font-weight: 700;
+    		text-align: center;
+    	}
+
+    	.text p{
+    		padding-left: 30pt;
+      		padding-right: 30pt;
+      		display: inline-block;
+      		color: white;
+      		font-weight: 600;
+    	}
+    	.boxes{
+    		width: 50%
+    	}
+    	.boxes p{
+    		background-color: hsl(248, 32%, 49%);
+    		color: white;
+    		padding-top: 15px;
+    		padding-bottom: 15px;
+    		text-align: center;
+    		border-radius: 8px;
+    		font-weight: 500;
+    	}
+
+    	.boxes div{
+    		background-color: white;
+    		padding-top: 17px;
+    		border-radius: 12px;
+    		justify-content: center;
+    		align-items: center;
+
+    	}
+
+    	.boxes div input{
+    		margin-left: 15px;
+    		margin-right: 15px;
+    		padding-top: 20px
+    		padding-bottom: 30px;
+    		padding: 12px 20px;
+    		width: 95%;
+    		border-radius: 6px;
+    		box-sizing: border-box;
+    		border: 1px solid hsl(249, 10%, 26%);
+    		display: inline-block;
+    	}
+
+    	input :onclick{
+    		border: 2px solid hsl(249, 10%, 26%);
+    	}
+
+    	button{
+    		width: 95%;
+ 		 	background-color: hsl(154, 59%, 51%);
+  			color: white;
+  			padding: 14px 20px;
+  			border: none;
+  			border-radius: 4px;
+  			cursor: pointer;
+  			margin-left: 15px;
+  			margin-top: 20px;
+  			margin-bottom: 12px;
+    	}
+
+    	footer{
+    		text-align: center;
+    		font-weight: 400;
+    		padding-bottom: 20px;
+    		color: hsl(246, 25%, 77%)
+    	}
+
+    	footer b{
+    		color: hsl(0, 100%, 74%) ;
+    	}
+    	
+    	footer a{
+    		text-decoration: none;
+    	}
+    }
+
+
+    @media screen and (max-width: 375px){
+    	section{
+    		flex-direction: column;
+    		display: flex;
+    		height: 600px;
+    		padding-right: 10px;
+    		padding-left: 10px;
+    		justify-content: center;
+    		align-items: center;
+    		margin-top: 30px
+    	}
+    	.text{
+    		width: 100%;
+    		padding-top: 30px;
+    		margin-bottom: 40px;
+    	}
+    	.boxes{
+    		width: 100%
+    	}
+    	.boxes div input{
+    		width: 90%;
+    	}
+    	button{
+    		width: 90%
+    	}
+    	footer{
+    		font-size: 11px;
+
+    	}
+  </style>
+</head>
+
+<body>
+<!--
+## Layout
+
+ The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Red: hsl(0, 100%, 74%) 
+- Green: hsl(154, 59%, 51%)
+
+### Accent
+
+- Blue: hsl(248, 32%, 49%)
+
+### Neutral
+
+- Dark Blue: hsl(249, 10%, 26%) 
+- Grayish Blue: hsl(246, 25%, 77%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400, 500, 600, 700 -->
+<section>
+	<div class="text">
+		<h1>Learn to code by watching others</h1>
+		<p> See how developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable </p>
+	</div>
+	<div class="boxes">
+		<p><b>Try it free for 7 days</b> then $20/mo. thereafter </p>
+		<div>
+			<input type="text" name="fname" placeholder="First Name" required>
+			<div class="lname"> <input type="text" name="lname" placeholder="Last Name" required></div>
+			<div class="Email"><input type="email" name="email" placeholder="Email Address" required></div>
+			<div class="password"><input type="password" name="password" placeholder="Password" required></div>
+			<button href="#"> Claim your free trial </button>
+			<footer>By clicking on this button, you are agreeing to our <a href="#"><b>Terms and services</b></a></footer>
+		</div>
+		
+	</div>
+</section>
+</body>
+</html>
